@@ -2,6 +2,7 @@
 
 <ul *ngFor="let place of places; let index" [ngSwitch]="place.closeness">
   <li
+    [appHighlight]="place.plan"
     [ngStyle]="{ color: place.active ? 'black' : 'gray' }"
     [ngClass]="{ evenNumber: (index + 1) % 2 !== 0 }"
   >

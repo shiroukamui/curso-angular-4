@@ -15,12 +15,12 @@ export class AppComponent implements OnInit{
   lng: number = -74.0700526
   lat: number = 4.6489681
   places: any = [
-    { closeness: 1, distance: 1, active: true, name: 'Floreria la Gardenia' },
-    { closeness: 1, distance: 3, active: true, name: 'Donas la Delicia' },
-    { closeness: 2, distance: 10, active: false, name: 'Veterinaria Huellitas' },
-    { closeness: 2, distance: 20, active: true, name: 'SushiRoll' },
-    { closeness: 3, distance: 80, active: true, name: 'Hotel el Descanso' },
-    { closeness: 3, distance: 100, active: false, name: 'Zapateria el Clavo' }
+    { plan: 'bought', closeness: 1, distance: 1, active: true, name: 'Floreria la Gardenia' },
+    { plan: 'free', closeness: 1, distance: 3, active: true, name: 'Donas la Delicia' },
+    { plan: 'bought', closeness: 2, distance: 10, active: false, name: 'Veterinaria Huellitas' },
+    { plan: 'bought', closeness: 2, distance: 20, active: true, name: 'SushiRoll' },
+    { plan: 'free', closeness: 3, distance: 80, active: true, name: 'Hotel el Descanso' },
+    { plan: 'bought', closeness: 3, distance: 100, active: false, name: 'Zapateria el Clavo' }
   ]
 
   ngOnInit(): void {
