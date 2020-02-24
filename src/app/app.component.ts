@@ -9,11 +9,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   places: any = [
-    { name: 'Floreria la Gardenia' },
-    { name: 'Donas la Delicia' },
-    { name: 'Veterinaria Huellitas' },
-    { name: 'Floreria la Gardenia' },
-    { name: 'Donas la Delicia' },
-    { name: 'Veterinaria Huellitas' }
+    { active: true, name: 'Floreria la Gardenia' },
+    { active: true, name: 'Donas la Delicia' },
+    { active: false, name: 'Veterinaria Huellitas' },
+    { active: true, name: 'SushiRoll' },
+    { active: true, name: 'Hotel el Descanso' },
+    { active: false, name: 'Zapateria el Clavo' }
   ]
 }

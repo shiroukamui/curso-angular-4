@@ -1,3 +1,3 @@
-<ul>
-  <li *ngFor="let place of places"> {{place.name}} </li>
+<ul *ngFor="let place of places">
+  <li *ngIf="place.active"> {{place.name}} </li>
 </ul>
