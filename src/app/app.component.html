@@ -1,6 +1,3 @@
-<span>¡{{ title }} {{ angular + version }} esta corriendo!</span>
-<button [disabled]="!ready" (click)="sayHello()">Click</button>
-<hr>
-<input type="text" placeholder="Tu Nombre" [(ngModel)]="name">
-<input type="text" placeholder="Tu Apellido" [(ngModel)]="lastName">
-<label> Tu nombre es {{name}} {{lastName}} </label>
+<ul>
+  <li *ngFor="let place of places"> {{place.name}} </li>
+</ul>

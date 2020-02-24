@@ -8,20 +8,12 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
 
-  title: string = 'Platzi Square';
-  angular: number = 4
-  version: number = 5
-  ready: boolean = false
-  name: string = ''
-  lastName: string = ''
-
-  constructor() {
-    setTimeout(() => {
-      this.ready = true
-    }, 3000);
-  }
-
-  sayHello(){
-    alert(`Hola ${this.title}`)
-  }
+  places: any = [
+    { name: 'Floreria la Gardenia' },
+    { name: 'Donas la Delicia' },
+    { name: 'Veterinaria Huellitas' },
+    { name: 'Floreria la Gardenia' },
+    { name: 'Donas la Delicia' },
+    { name: 'Veterinaria Huellitas' }
+  ]
 }
