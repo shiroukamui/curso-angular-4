@@ -7,10 +7,13 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'Platzi Square';
-  angular = 4
-  version = 5
-  ready = false
+
+  title: string = 'Platzi Square';
+  angular: number = 4
+  version: number = 5
+  ready: boolean = false
+  name: string = ''
+  lastName: string = ''
 
   constructor() {
     setTimeout(() => {
@@ -19,6 +22,6 @@ export class AppComponent {
   }
 
   sayHello(){
-    alert('Hola Mundo')
+    alert(`Hola ${this.title}`)
   }
 }
