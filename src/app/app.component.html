@@ -1,5 +1,5 @@
 <div id="map">{{coordinates}}</div>
 
-<ul *ngFor="let place of places">
-  <li *ngIf="place.active"> {{place.name}} </li>
+<ul *ngFor="let place of places; let index">
+  <li [ngStyle]="{'color': (place.active) ? 'green' : 'red'}" [ngClass]="{evenNumber: (index+1) % 2 !== 0}"> {{place.name}} </li>
 </ul>
