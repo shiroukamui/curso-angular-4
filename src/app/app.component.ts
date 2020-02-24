@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Platzi Square';
+  angular = 4
+  version = 5
 }
