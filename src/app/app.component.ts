@@ -17,4 +17,8 @@ export class AppComponent {
       this.ready = true
     }, 3000);
   }
+
+  sayHello(){
+    alert('Hola Mundo')
+  }
 }
