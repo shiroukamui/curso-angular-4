@@ -14,7 +14,6 @@ export class AppComponent implements OnInit{
   coordinates: any
   lng: number = -74.0700526
   lat: number = 4.6489681
-  clicksMessage: string
   places: any = [
     { plan: 'bought', closeness: 1, distance: 1, active: true, name: 'Floreria la Gardenia' },
     { plan: 'free', closeness: 1, distance: 3, active: true, name: 'Donas la Delicia' },

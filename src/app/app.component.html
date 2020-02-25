@@ -1,5 +1,7 @@
 <div class="inline" id="map">{{ coordinates }}</div>
-<div class="inline">{{ clicksMessage }}</div>
+<div class="inline">
+  <p></p>
+</div>
 
 <ul *ngFor="let place of places; let index" [ngSwitch]="place.closeness">
   <li
