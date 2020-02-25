@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { HighlightDirective } from './directives/highlight.directive';
+import { ClickCounterDirective } from './directives/click-counter.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HighlightDirective
+    HighlightDirective,
+    ClickCounterDirective
   ],
   imports: [
     BrowserModule,

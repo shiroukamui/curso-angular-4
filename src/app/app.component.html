@@ -1,14 +1,16 @@
-<div id="map">{{ coordinates }}</div>
+<div class="inline" id="map">{{ coordinates }}</div>
+<div class="inline">{{ clicksMessage }}</div>
 
 <ul *ngFor="let place of places; let index" [ngSwitch]="place.closeness">
   <li
+    appClickCounter
     [appHighlight]="place.plan"
     [ngStyle]="{ color: place.active ? 'black' : 'gray' }"
     [ngClass]="{ evenNumber: (index + 1) % 2 !== 0 }"
   >
     {{ place.name }} -
-    <span *ngSwitchCase="1" [ngStyle]="{color: 'green'}">Cercano</span>
-    <span *ngSwitchCase="2" [ngStyle]="{color: 'yellow'}">Itermedio</span>
-    <span *ngSwitchCase="3" [ngStyle]="{color: 'red'}">Lejano</span>
+    <span *ngSwitchCase="1" [ngStyle]="{ color: 'green' }">Cercano</span>
+    <span *ngSwitchCase="2" [ngStyle]="{ color: 'yellow' }">Itermedio</span>
+    <span *ngSwitchCase="3" [ngStyle]="{ color: 'red' }">Lejano</span>
   </li>
 </ul>
