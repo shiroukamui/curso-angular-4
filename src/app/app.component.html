@@ -1,3 +1,11 @@
+<mat-toolbar class="navbar">
+  <div>PlatziSquare</div>
+  <div>
+    <span>Inicio</span>
+    <span>Contacto</span>
+  </div>
+</mat-toolbar>
+
 <mat-card class="cards">
   <mat-card-title>Mapa</mat-card-title>
   <mat-card-content>
@@ -15,18 +23,18 @@
       <mat-list-item
         appClickCounter
         [appHighlight]="place.plan"
-        [ngStyle]="{ color: place.active ? 'black' : 'gray' }"
+        [ngStyle]="{ color: place.active ? '#000000' : '#6b6b6b' }"
         [ngClass]="{ evenNumber: (index + 1) % 2 !== 0 }"
       >
         <mat-icon matListIcon> {{ place.icon }} </mat-icon>
         <h3 matLine>{{ place.name }}</h3>
-        <p matLine *ngSwitchCase="1" [ngStyle]="{ color: 'green' }">
+        <p matLine *ngSwitchCase="1" [ngStyle]="{ color: '#009933' }">
           Cercano
         </p>
-        <p matLine *ngSwitchCase="2" [ngStyle]="{ color: 'yellow' }">
+        <p matLine *ngSwitchCase="2" [ngStyle]="{ color: '#cc5200' }">
           Itermedio
         </p>
-        <p matLine *ngSwitchCase="3" [ngStyle]="{ color: 'red' }">Lejano</p>
+        <p matLine *ngSwitchCase="3" [ngStyle]="{ color: '#e60000' }">Lejano</p>
       </mat-list-item>
       <mat-divider></mat-divider>
     </mat-list>

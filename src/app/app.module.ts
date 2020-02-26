@@ -7,6 +7,7 @@ import { MatIconModule } from '@angular/material/icon'
 import { MatDividerModule } from '@angular/material/divider'
 import { MatGridListModule } from '@angular/material/grid-list'
 import { MatCardModule } from '@angular/material/card'
+import { MatToolbarModule } from '@angular/material/toolbar'
 
 import { AppComponent } from './app.component';
 import { HighlightDirective } from './directives/highlight.directive';
@@ -19,7 +20,8 @@ const material = [
   MatIconModule,
   MatDividerModule,
   MatGridListModule,
-  MatCardModule
+  MatCardModule,
+  MatToolbarModule
 ]
 @NgModule({
   declarations: [

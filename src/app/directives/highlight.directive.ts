@@ -11,7 +11,7 @@ export class HighlightDirective implements OnInit{
 
   ngOnInit():void {
     if (this.plan === 'bought') {
-      this.render.setStyle(this.elRef.nativeElement, 'background-color', 'orange')
+      this.render.setStyle(this.elRef.nativeElement, 'background-color', '#cccc00')
       this.render.setStyle(this.elRef.nativeElement, 'font-weight', 'bold')
     }
   }
