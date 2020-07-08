@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "platziSquare": {
+    "platzi-square": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
